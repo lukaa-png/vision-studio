@@ -1,0 +1,29 @@
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependências, caches e arquivos temporários
+node_modules/
+__pycache__/
+.venv/
+.cache/
+tmp/
+work/
+private/
+.DS_Store
+Thumbs.db
+*.log
+
+# Mídia de produção e pacotes: manter fora do histórico de código
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.webm
+*.zip
+*.tar
+*.gz
+*.pdf
