@@ -80,6 +80,8 @@ Os registros anteriores à criação deste repositório são documentação retr
 
 O site é estático. Para publicar, o `index.html` deve ficar na raiz do conteúdo servido junto dos CSS, JavaScript e da pasta `assets/`. A criação deste repositório não altera o site já hospedado no Cloudflare Pages nem ativa integração automática de deploy.
 
+O workflow **Vision · verificar e publicar** prepara uma pasta `dist` com apenas os arquivos públicos e pode publicar no projeto Cloudflare **vision**, preservando `vision-ckp.pages.dev`. Fica desativado até o dono cadastrar os dois segredos e ativar `CLOUDFLARE_DEPLOY_ENABLED=true`. Consulte [configuração e recuperação](docs/PUBLICACAO.md). Não envie tokens pelo chat nem pelo código.
+
 ## Escopo e direitos
 
 Primeira versão privada para revisão. Não foi selecionada uma licença de código aberto. Logos, fotografias, imagens de projetos e materiais de terceiros não recebem licença aberta por estarem neste repositório. Consulte [autoria e materiais](docs/AUTORIA-E-MATERIAIS.md) antes de abrir o projeto ao público ou reutilizar os assets.

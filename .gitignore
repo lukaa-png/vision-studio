@@ -7,6 +7,7 @@
 
 # Dependências, caches e arquivos temporários
 node_modules/
+dist/
 __pycache__/
 .venv/
 .cache/

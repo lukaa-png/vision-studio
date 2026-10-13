@@ -2,6 +2,14 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 13/10/2026 - Preparação da publicação automática
+
+- GitHub Actions com verificação de sintaxe/referências antes do deploy.
+- Empacotamento explícito dos arquivos públicos, sem documentação ou segredos.
+- Projeto Cloudflare confirmado como `vision`, com URL `vision-ckp.pages.dev`.
+- Publicação protegida por variável de ativação; credenciais cadastradas pelo dono no GitHub Secrets.
+- Esta preparação não comprova a ativação nem o sucesso do deploy.
+
 ## 13/10/2026 - Trailer no site
 
 - Seção “A Vision em movimento” antes do contato, com poster e play manual.
