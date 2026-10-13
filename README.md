@@ -40,6 +40,7 @@ index.html                 Conteúdo e seções do site
 styles.css                 Identidade, layout e responsividade
 project-covers.css         Composição editorial das capas
 script.js                  Interações do site
+trailer.css / trailer.js   Player do filme, carregado somente após clicar
 assets/                    Imagens e símbolo utilizados na página
 docs/                      Decisões, processo e roteiro de estudo
 scripts/check.mjs          Verificação estrutural do site
@@ -49,6 +50,8 @@ scripts/check.mjs          Verificação estrutural do site
 
 Tema claro/escuro, menu móvel, filtros, galeria com teclado, FAQ e briefing que prepara uma mensagem para WhatsApp. O visitante confirma o envio; não há backend nem armazenamento de leads nesta implementação.
 
+A seção “A Vision em movimento” apresenta o V2 de 30 segundos antes do contato. O vídeo leve (~1,68 MB) só recebe sua fonte no clique; não toca sozinho. Inclui controles, reprodução inline no celular, legendas opcionais em português e transcrição. As legendas requerem servir a pasta por HTTP, não abrir o HTML por `file://`.
+
 O movimento decorativo pode ser pausado e considera `prefers-reduced-motion`. Isso não equivale a uma certificação completa de acessibilidade.
 
 ## Verificar o código
@@ -57,6 +60,7 @@ Com Node.js disponível:
 
 ```sh
 node --check script.js
+node --check trailer.js
 node scripts/check.mjs .
 ```
 

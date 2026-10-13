@@ -27,3 +27,6 @@ Thumbs.db
 *.tar
 *.gz
 *.pdf
+
+# Derivada leve aprovada para o player do site (masters continuam excluídos).
+!assets/vision-trailer-720p.mp4

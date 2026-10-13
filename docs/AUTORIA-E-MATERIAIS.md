@@ -24,6 +24,6 @@ Space Grotesk, IBM Plex Mono e Pixelify Sans são carregadas pelo Google Fonts. 
 
 ## Arquivos deliberadamente excluídos
 
-Não foram incluídos áudios de produção, vídeos completos, arquivos temporários, conversas, memórias, credenciais, links de upload assinados ou identificadores internos de geração. A documentação de processo usa apenas informações necessárias ao projeto.
+Não foram incluídos áudios de produção, masters, arquivos temporários, conversas, memórias, credenciais, links de upload assinados ou identificadores internos de geração. A única exceção de vídeo é a derivada leve aprovada para o player do site, em `assets/vision-trailer-720p.mp4`. A documentação de processo usa apenas informações necessárias ao projeto.
 
 Esta nota registra limites de autoria e publicação; não é uma auditoria jurídica das licenças comerciais.

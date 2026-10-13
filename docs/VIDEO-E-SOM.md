@@ -23,3 +23,11 @@ Master 1920 x 1080 e derivada 1280 x 720; 30 segundos, 1.800 quadros e 60 fps. M
 Esses números descrevem a entrega anterior. Não houve nova renderização do trailer para preparar este repositório. Não foram gastos novos créditos de voz, música ou efeito na atualização da narração para Ana Alice.
 
 Para publicar o vídeo, usar o master entregue e revisar os créditos de geração e materiais. O site público não foi alterado nesta organização para GitHub.
+
+## Player do site — 13/10/2026
+
+A derivada leve existente (1280 × 720, 60 fps, 1.679.485 bytes) foi incorporada antes do contato, sem reexportação e sem gasto de créditos. Poster extraído do próprio vídeo. O player não define `src` até o clique; `preload="none"` sozinho não garantiria essa condição.
+
+O WebVTT usa os 15 intervalos do relatório de sincronização da narração final. Português no alto do player para não sobrepor o inglês já embutido no trailer. Controles nativos permitem desligar as legendas, pausar, buscar e entrar em tela cheia conforme suporte do navegador. Transcrição e link direto sem JavaScript oferecem alternativas.
+
+O MP4 de distribuição é a única exceção aos vídeos ignorados pelo Git. Masters, áudios de produção e arquivos de edição continuam fora do repositório. Atualização do repositório e deploy público são etapas distintas.

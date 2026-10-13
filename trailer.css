@@ -1,0 +1,28 @@
+/* O filme mantém a paleta original; a seção acompanha o tema do site. */
+.trailer { border-top: 1px solid var(--line); }
+.trailer-heading > p { color: var(--muted); max-width: 380px; }
+.trailer-player { position: relative; aspect-ratio: 16 / 9; background: #080d18; border: 1px solid var(--line); }
+.trailer-player video { display: block; width: 100%; height: 100%; object-fit: contain; background: #080d18; }
+.trailer-player video::cue { color: #e8f1f5; background: rgba(8, 13, 24, .92); font-family: 'Space Grotesk', Arial, sans-serif; }
+.trailer-play { position: absolute; left: 28px; bottom: 28px; display: flex; align-items: center; gap: 14px; padding: 12px 18px 12px 12px; min-height: 64px; background: #080d18; border: 1px solid #8eddd8; color: #e8f1f5; font-size: 16px; text-align: left; }
+.trailer-play-icon { display: grid; place-items: center; width: 40px; height: 40px; flex: none; background: #b5f45b; color: #080d18; }
+.trailer-play-icon svg { width: 20px; height: 20px; }
+.trailer-play:hover { border-color: #b5f45b; }
+.trailer-play:focus-visible { outline-color: #b5f45b; outline-offset: 5px; }
+.trailer-caption { display: flex; justify-content: space-between; gap: 20px; padding-top: 18px; color: var(--muted); }
+.trailer-caption > span { color: var(--info); text-align: right; }
+.trailer-status, .trailer-fallback, .trailer-nojs { margin-top: 16px; color: var(--muted); }
+.trailer-fallback a, .trailer-nojs a { text-decoration: underline; text-underline-offset: 4px; color: var(--info); }
+.trailer-transcript { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 26px; }
+.trailer-transcript summary { padding: 18px 0; }
+.trailer-transcript p { max-width: 760px; color: var(--muted); margin: 0 0 22px; }
+@media (max-width: 700px) {
+  .trailer-heading > p { margin-top: 22px; font-size: 14px; }
+  .trailer-play { left: 12px; bottom: 12px; padding: 8px 12px 8px 8px; min-height: 48px; font-size: 13px; gap: 10px; }
+  .trailer-play-icon { width: 32px; height: 32px; }
+  .trailer-caption { flex-direction: column; gap: 8px; }
+  .trailer-caption .mono { font-size: 8px; }
+  .trailer-caption > span { text-align: left; }
+  .trailer-transcript p { font-size: 14px; }
+}
+@media (max-width: 350px) { .trailer-play-duration { display: block; margin-top: 3px; } }

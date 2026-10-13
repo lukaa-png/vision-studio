@@ -2,6 +2,14 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 13/10/2026 - Trailer no site
+
+- Seção “A Vision em movimento” antes do contato, com poster e play manual.
+- V2 leve 720p60 preservada, sem autoplay/loop e sem carregar MP4 antes do clique.
+- Controles nativos, legendas WebVTT em português e transcrição.
+- Implementação em CSS/JS separados, sem alterar as interações anteriores.
+- Pacote para Cloudflare preparado separadamente; commit no GitHub não é deploy.
+
 ## 13/10/2026 - Organização para GitHub
 
 - Separação do código do site, documentação e capturas.
