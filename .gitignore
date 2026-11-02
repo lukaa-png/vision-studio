@@ -31,3 +31,11 @@ Thumbs.db
 
 # Derivada leve aprovada para o player do site (masters continuam excluídos).
 !assets/vision-trailer-720p.mp4
+
+# Prévias pequenas do processo de design; masters e fontes de áudio ficam fora.
+!design/motion/v4/vision-v4-commercial-preview-720p60.mp4
+!design/motion/v4/vision-mascot-2d-preview-720p60.mp4
+!design/mascot/3d/previews/Vision-3D-teste-5s.mp4
+design/mascot/3d/build/
+*.blend1
+*.blend2

@@ -2,6 +2,15 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 02/11/2026 — V4 e primeiro protótipo 3D do mascote
+
+- Direção clara da V4 e revisão de presença do mascote, com prévias leves e legendas em `design/motion/v4/`.
+- Conceito e atlas de partes gerados por IA registrados como referências, com autoria e limites documentados.
+- Protótipo mecânico 3D construído em Blender: 58 malhas no GLB, controles de corpo/cabeça/braços e teste de flutuação, giro e gesto.
+- Fonte `.blend`, GLB com uma animação, prévia de cinco segundos e amostra transparente em `design/mascot/3d/`.
+- Scripts portáveis do Blender e registros das verificações. Acabamento visual ainda em protótipo.
+- IA para empresas identificada como visão futura, sem alegar um produto lançado.
+
 ## 13/10/2026 - Preparação da publicação automática
 
 - GitHub Actions com verificação de sintaxe/referências antes do deploy.

@@ -71,6 +71,7 @@ O segundo comando confere arquivos locais referenciados, âncoras, IDs duplicado
 - [Decisões de design e implementação](docs/PROCESSO.md)
 - [Roteiro para estudar o código](docs/ESTUDAR-O-CODIGO.md)
 - [Motion, voz e som](docs/VIDEO-E-SOM.md)
+- [Novembro/2026: V4 e mascote 3D articulado](design/README.md)
 - [Registro de evolução](CHANGELOG.md)
 - [Autoria e materiais](docs/AUTORIA-E-MATERIAIS.md)
 
@@ -84,6 +85,12 @@ O workflow **Vision · verificar e publicar** prepara uma pasta `dist` com apena
 
 ## Escopo e direitos
 
-Primeira versão privada para revisão. Não foi selecionada uma licença de código aberto. Logos, fotografias, imagens de projetos e materiais de terceiros não recebem licença aberta por estarem neste repositório. Consulte [autoria e materiais](docs/AUTORIA-E-MATERIAIS.md) antes de abrir o projeto ao público ou reutilizar os assets.
+Repositório público de documentação do projeto. Não foi selecionada uma licença de código aberto. Logos, fotografias, imagens de projetos e materiais de terceiros não recebem licença aberta por estarem neste repositório. Consulte [autoria e materiais](docs/AUTORIA-E-MATERIAIS.md) antes de reutilizar os assets.
 
-Última organização deste registro: 13/10/2026.
+## Novas explorações — 02/11/2026
+
+A direção clara da V4 combina prévias dos projetos, voz feminina e um mascote com aparência 3D animado por camadas. A etapa seguinte já possui um **protótipo com geometria 3D e controles de articulação**, acompanhado de `.blend`, `.glb`, teste de cinco segundos e scripts de reprodução no Blender. O acabamento ainda não equivale ao conceito visual aprovado.
+
+Veja [o processo, arquivos e limites de cada etapa](design/README.md). A visão de uma futura startup de IA para design está registrada como intenção em desenvolvimento.
+
+Última organização deste registro: 02/11/2026.

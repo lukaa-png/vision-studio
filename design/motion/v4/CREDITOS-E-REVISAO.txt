@@ -1,0 +1,29 @@
+VISION V4 — REVISÃO DE MOVIMENTO
+Luiz Albuquerque / Vision, com assistência de Codex. 02-11-2026.
+
+Revisão do comercial de 30s e da apresentação visual do mascote de 12s.
+1920x1080, 60fps, com versões leves em 1280x720, 60fps.
+
+MASCOTE
+Animação em camadas 2.5D do render e atlas de partes gerados por IA,
+com deslocamento pelo quadro, flutuação contínua, sombra, inclinação de corpo,
+cabeça e braço. Não há arquivo de malha 3D articulada/GLB nesta entrega.
+Interações visuais de apresentação: indicação do contato, passagem para mobile,
+destaque de campos, módulos de estrutura/design/publicação e convite final.
+As linhas e realces são recursos da edição, não funcionalidades novas dos sites.
+
+APRESENTAÇÃO PRÓPRIA
+Planos aberto e de detalhe, órbitas, elementos em movimento e desenho do V.
+O personagem ocupa o centro da ação. Menos texto que na apresentação anterior.
+IA para empresas continua identificada como visão de futuro, em construção.
+
+MATERIAIS E SOM
+Mesmos materiais da V4 aprovada: Black (estudo autorizado), Ateliê 27 (conceitual,
+pedido demonstrativo) e Sára Zara (identidade com orçamento personalizado).
+Fontes Space Grotesk e IBM Plex Mono. Paleta Vision clara, verde, núcleo e ciano.
+Áudio comercial preservado do master da V4: Ana Alice, ElevenLabs v4. Trilha Glass
+and Shadow e efeitos fornecidos pelo usuário. Na apresentação do mascote, os
+efeitos foram reposicionados para os novos cortes e movimentos. Esta revisão não gerou nova locução
+nem gastou novos créditos. Informações de origem e limites dos materiais
+fotográficos permanecem conforme CREDITOS.txt da entrega V4 anterior.
+Render e composição locais com assistência de Codex.
