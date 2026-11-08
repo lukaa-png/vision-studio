@@ -94,7 +94,28 @@
     vision: { title: 'Vision', category: '001 / IDENTIDADE + WEB / PROJETO PRÓPRIO', description: 'Campo de visão: enquadramento, tipografia e cor conectam a identidade às aplicações digitais.', images: [ ['assets/vision-logo-system.png', 'Direção do logotipo e suas aplicações'], ['assets/vision-direction.png', 'Direção de marca — Campo de visão'], ['assets/vision-manifesto.png', 'Manifesto — Abrir o campo'], ['assets/vision-oferta.png', 'Oferta — Ideia em sistema'], ['assets/vision-processo.png', 'Processo — Construir com intenção'] ] },
     black: { title: 'Lan House do Black', category: '002 / LANDING PAGE / ESTUDO AUTORIZADO', description: 'Estudo de desenvolvimento web publicado com autorização do proprietário. Apresentação dos serviços e presença digital de um negócio do bairro.', url: 'https://lan-house-do-black.pages.dev/', images: [ ['assets/black-web.png', 'Página inicial — Lan House do Black'] ] },
     sara: { title: 'Sára Zara', category: '003 / IDENTIDADE VISUAL', description: 'Projeto de identidade visual com logotipo, guia, paleta e materiais personalizados. Peças do portfólio original da Vision.', images: [ ['assets/sara-guia.jpg', 'Capa do guia visual'], ['assets/sara-post.jpg', 'Post — Política sem permissão'], ['assets/sara-agenda.jpg', 'Peça de agenda'], ['assets/sara-logo.png', 'Logotipo Sára Zara'] ] },
-    allyah: { title: 'Allyah Braids', category: '004 / IDENTIDADE VISUAL', description: 'Identidade visual com logotipo, guia visual, paleta e materiais gráficos personalizados. Apresentação das peças originais.', images: [ ['assets/allyah-logo.png', 'Logotipo Allyah Braids'], ['assets/allyah-paleta.jpg', 'Paleta do guia visual'] ] }
+    allyah: {
+      title: 'Allyah Braids',
+      category: '004 / IDENTIDADE + WEB',
+      description: 'A identidade visual do estúdio da Lia ganhou uma landing page em tons terrosos, com galeria de tranças e um formulário que prepara o pedido de horário para envio pelo WhatsApp.',
+      url: 'https://allyah-braids.pages.dev/',
+      images: [
+        ['assets/allyah-web.jpg', 'Página inicial — Allyah Braids'],
+        ['assets/allyah-agendamento.jpg', 'Formulário de pedido de horário pelo WhatsApp'],
+        ['assets/allyah-logo.png', 'Logotipo Allyah Braids'],
+        ['assets/allyah-paleta.jpg', 'Paleta do guia visual']
+      ]
+    },
+    atelie: {
+      title: 'Ateliê 27',
+      category: '005 / LANDING PAGE / PROJETO CONCEITUAL',
+      description: 'Estudo de landing page para barbearia com direção visual em preto e branco, apresentação dos serviços e um fluxo demonstrativo de pedido de horário.',
+      url: 'https://barbearia-9lz.pages.dev/',
+      images: [
+        ['assets/atelie-27-web.jpg', 'Página inicial — Ateliê 27'],
+        ['assets/atelie-27-agendamento.jpg', 'Demonstração do pedido de horário']
+      ]
+    }
   };
   const dialog = $('.project-dialog');
   let currentProject;

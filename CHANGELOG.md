@@ -2,6 +2,12 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 08/11/2026 — Portfólio de landing pages
+
+- Allyah Braids passa a reunir identidade visual e site, com capturas da página inicial e do pedido de horário pelo WhatsApp.
+- Ateliê 27 entra como projeto conceitual de barbearia, com demonstração do pedido de horário.
+- Os dois cases incluem link para a página publicada.
+
 ## 02/11/2026 — V4 e primeiro protótipo 3D do mascote
 
 - Direção clara da V4 e revisão de presença do mascote, com prévias leves e legendas em `design/motion/v4/`.
