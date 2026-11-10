@@ -2,6 +2,11 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 10/11/2026 — Comercial V5 e mascote oficial
+
+- Comercial de 24 segundos com Allyah Braids, Solução Protect e Ateliê 27. A versão leve e a composição visual estão em `design/motion/v5/`.
+- O fantasminha 3D da V5 foi aprovado como mascote oficial da Vision. O modelo editável, o GLB e quatro animações com fundo transparente estão em `design/mascot/official/`.
+
 ## 10/11/2026 — Solução Protect no portfólio
 
 - Novo case de landing page no filtro Web, com capturas da abertura e dos serviços.

@@ -1,12 +1,14 @@
 # Design, movimento e mascote da Vision
 
-Registro de evolução em **02/11/2026**, com direção de Luiz Albuquerque e assistência de IA na criação dos conceitos, código, composição e documentação.
+Registro de evolução com direção de Luiz Albuquerque e assistência de IA na criação dos conceitos, código, composição e documentação.
 
 | Etapa | Entrega | Estado |
 | --- | --- | --- |
 | V4 clara | [Comercial, apresentação do mascote e créditos](motion/v4/README.md) | Vídeos exportados; personagem animado por camadas 2.5D. |
 | Referência do personagem | [Conceito visual](mascot/references/vision-mascot-concept.png) e [atlas de partes](mascot/references/vision-mascot-parts-2d.png) | Imagens geradas por IA; não são modelos 3D. |
 | Protótipo 3D | [Modelo, teste e instruções de reprodução](mascot/3d/README.md) | Geometria tridimensional e controles mecânicos funcionando; acabamento a refinar. |
+| Comercial V5 | [Vídeo, composição visual e créditos](motion/v5/README.md) | Comercial de 24 segundos com os três projetos recentes. |
+| Mascote oficial | [Fantasminha 3D, modelo e quatro animações](mascot/official/README.md) | Personagem aprovado por Luiz Albuquerque em 10/11/2026. |
 
 ## Por que evoluir para 3D
 

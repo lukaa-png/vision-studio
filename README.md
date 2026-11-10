@@ -71,7 +71,9 @@ O segundo comando confere arquivos locais referenciados, âncoras, IDs duplicado
 - [Decisões de design e implementação](docs/PROCESSO.md)
 - [Roteiro para estudar o código](docs/ESTUDAR-O-CODIGO.md)
 - [Motion, voz e som](docs/VIDEO-E-SOM.md)
-- [Novembro/2026: V4 e mascote 3D articulado](design/README.md)
+- [Comercial V5](design/motion/v5/README.md)
+- [Mascote oficial e animações 3D](design/mascot/official/README.md)
+- [Histórico de design e movimento](design/README.md)
 - [Registro de evolução](CHANGELOG.md)
 - [Autoria e materiais](docs/AUTORIA-E-MATERIAIS.md)
 
@@ -87,10 +89,10 @@ O workflow **Vision · verificar e publicar** prepara uma pasta `dist` com apena
 
 Repositório público de documentação do projeto. Não foi selecionada uma licença de código aberto. Logos, fotografias, imagens de projetos e materiais de terceiros não recebem licença aberta por estarem neste repositório. Consulte [autoria e materiais](docs/AUTORIA-E-MATERIAIS.md) antes de reutilizar os assets.
 
-## Novas explorações — 02/11/2026
+## Comercial V5 e mascote oficial
 
-A direção clara da V4 combina prévias dos projetos, voz feminina e um mascote com aparência 3D animado por camadas. A etapa seguinte já possui um **protótipo com geometria 3D e controles de articulação**, acompanhado de `.blend`, `.glb`, teste de cinco segundos e scripts de reprodução no Blender. O acabamento ainda não equivale ao conceito visual aprovado.
+O comercial V5 apresenta Allyah Braids, Solução Protect e Ateliê 27. O fantasminha que conduz o vídeo passou a ser o mascote oficial da Vision. Seu pacote reúne a geometria editável, um GLB com quatro movimentos e clipes com transparência.
 
 Veja [o processo, arquivos e limites de cada etapa](design/README.md). A visão de uma futura startup de IA para design está registrada como intenção em desenvolvimento.
 
-Última organização deste registro: 02/11/2026.
+Última atualização em 10/11/2026.
