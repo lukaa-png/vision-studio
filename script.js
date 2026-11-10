@@ -115,6 +115,15 @@
         ['assets/atelie-27-web.jpg', 'Página inicial — Ateliê 27'],
         ['assets/atelie-27-agendamento.jpg', 'Demonstração do pedido de horário']
       ]
+    },
+    protect: {
+      title: 'Solução Protect',
+      category: '006 / LANDING PAGE',
+      description: 'Landing page responsiva para apresentar cercas de piscina, redes de proteção e outras soluções residenciais. Fotos de instalações e cartões de serviços ajudam o visitante a entender a oferta e pedir um orçamento pelo WhatsApp.',
+      images: [
+        ['assets/solucao-protect-web.jpg', 'Página inicial — Solução Protect'],
+        ['assets/solucao-protect-servicos.jpg', 'Serviços e chamadas para orçamento']
+      ]
     }
   };
   const dialog = $('.project-dialog');

@@ -2,6 +2,10 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 10/11/2026 — Solução Protect no portfólio
+
+- Novo case de landing page no filtro Web, com capturas da abertura e dos serviços.
+
 ## 08/11/2026 — Portfólio de landing pages
 
 - Allyah Braids passa a reunir identidade visual e site, com capturas da página inicial e do pedido de horário pelo WhatsApp.
