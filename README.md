@@ -41,6 +41,8 @@ styles.css                 Identidade, layout e responsividade
 project-covers.css         Composição editorial das capas
 script.js                  Interações do site
 trailer.css / trailer.js   Player do filme, carregado somente após clicar
+mascot.js                  Fantasminha 2D que acompanha o briefing
+mascot-engine.js           Motor Open Bot Avatar (MIT, de terceiros), empacotado
 assets/                    Imagens e símbolo utilizados na página
 docs/                      Decisões, processo e roteiro de estudo
 scripts/check.mjs          Verificação estrutural do site
@@ -49,6 +51,8 @@ scripts/check.mjs          Verificação estrutural do site
 ## Recursos implementados
 
 Tema claro/escuro, menu móvel, filtros, galeria com teclado, FAQ e briefing que prepara uma mensagem para WhatsApp. O visitante confirma o envio; não há backend nem armazenamento de leads nesta implementação.
+
+O fantasminha da Vision acompanha o briefing em 2D: olha para o ponteiro, pensa enquanto a pessoa digita e fica feliz quando a mensagem está pronta. Ele usa o motor [Open Bot Avatar](https://github.com/DominikScholz/open-bot-avatar), de Dominik Scholz, sob licença MIT, hospedado no próprio site e sem coleta de dados. Detalhes em [design/mascot/avatar-2d](design/mascot/avatar-2d/README.md).
 
 A seção “A Vision em movimento” apresenta o V2 de 30 segundos antes do contato. O vídeo leve (~1,68 MB) só recebe sua fonte no clique; não toca sozinho. Inclui controles, reprodução inline no celular, legendas opcionais em português e transcrição. As legendas requerem servir a pasta por HTTP, não abrir o HTML por `file://`.
 

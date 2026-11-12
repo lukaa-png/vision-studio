@@ -17,3 +17,4 @@ html[data-theme=light]{--ink:#f1f4ef;--surface:#e5eae2;--text:#101b1b;--muted:#5
 .landing-offer .landing-offer-cta{grid-column:1/-1;justify-self:start;min-height:44px;margin-top:0;gap:12px;font-size:10px}
 .landing-offer-cta svg{flex:none}
 
+.briefing-heading{position:relative;padding-right:104px}.briefing-mascot{position:absolute;top:-18px;right:-10px;width:112px;aspect-ratio:1;pointer-events:none}@media(max-width:600px){.briefing-heading{padding-right:76px}.briefing-mascot{width:84px;top:-12px;right:-8px}}

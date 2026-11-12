@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const source = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const temp = await mkdtemp(path.join(tmpdir(), 'vision-publish-test-'));
-const publicFiles = ['index.html', 'styles.css', 'project-covers.css', 'script.js', 'trailer.css', 'trailer.js'];
+const publicFiles = ['index.html', 'styles.css', 'project-covers.css', 'script.js', 'trailer.css', 'trailer.js', 'mascot.js', 'mascot-engine.js'];
 const checked = [];
 async function fixture(name) {
   const root = path.join(temp, name);

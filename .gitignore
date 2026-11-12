@@ -42,3 +42,7 @@ Thumbs.db
 design/mascot/3d/build/
 *.blend1
 *.blend2
+
+# Ferramentas locais do Claude Code (caminhos do computador, fluxo pessoal)
+.claude/
+CLAUDE.md

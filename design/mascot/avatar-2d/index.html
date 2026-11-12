@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fantasminha Vision · avatar</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#080d18; --surface:#0d1522; --text:#e8f1f5; --muted:#98a7ba; --line:#293543; --pulse:#b5f45b; --info:#8eddd8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ink); color:var(--text); font:400 15px/1.5 'Space Grotesk',sans-serif;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px; background-position: -1px -1px; }
+  body::before { content:''; position:fixed; inset:0; background:radial-gradient(circle at 50% 40%, transparent 0, var(--ink) 70%); pointer-events:none; }
+  main { position:relative; max-width:1200px; margin:0 auto; padding:40px 24px 80px; }
+  .mono { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  h1 { font-size:clamp(36px,6vw,64px); line-height:1; margin:12px 0 8px; }
+  h1 span { color:var(--pulse); }
+  .row { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:32px; }
+  .card { background:color-mix(in srgb, var(--surface) 85%, transparent); border:1px solid var(--line); padding:16px; }
+  .card.light { background:#e8f1f5; color:#080d18; }
+  .stage { aspect-ratio:1; width:100%; }
+  .bar { display:flex; justify-content:space-between; gap:8px; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+  button { background:transparent; color:var(--text); border:1px solid var(--line); padding:8px 14px; font:500 12px 'IBM Plex Mono',monospace; text-transform:uppercase; cursor:pointer; }
+  button[aria-pressed=true] { background:var(--pulse); color:var(--ink); border-color:var(--pulse); }
+  .sizes { display:flex; align-items:flex-end; gap:24px; }
+  .sizes > div { display:grid; justify-items:center; gap:6px; }
+  @media (max-width:850px) { .row { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <p class="mono">FIG. 002 / MASCOTE · OPEN BOT AVATAR</p>
+  <h1>Fantasminha<span>_</span></h1>
+  <p class="mono">Versão 2D viva · forma em JSON · volume, olhar e humor gerados pelo motor</p>
+
+  <div class="controls" role="group" aria-label="Humor">
+    <button data-mood="idle" aria-pressed="true">Idle</button>
+    <button data-mood="thinking" aria-pressed="false">Pensando</button>
+    <button data-mood="happy" aria-pressed="false">Feliz</button>
+    <button data-follow aria-pressed="true">Seguir o mouse</button>
+  </div>
+
+  <div class="row">
+    <div class="card"><div class="bar"><span class="mono">A / PÉROLA</span><span class="mono">#E8F1F5</span></div><div class="stage" data-color="#e8f1f5" data-eye="#080d18"></div></div>
+    <div class="card"><div class="bar"><span class="mono">B / PULSE</span><span class="mono">#B5F45B</span></div><div class="stage" data-color="#b5f45b" data-eye="#080d18"></div></div>
+    <div class="card light"><div class="bar"><span class="mono" style="color:#566760">C / VISOR</span><span class="mono" style="color:#566760">#0D1522</span></div><div class="stage" data-color="#101b2b" data-eye="#b5f45b"></div></div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <p class="mono">Tamanhos de uso · avatar de chat, ícone, botão</p>
+    <div class="sizes">
+      <div><div class="stage" style="width:28px" data-color="#e8f1f5" data-eye="#080d18"></div><span class="mono">28</span></div>
+      <div><div class="stage" style="width:48px" data-color="#e8f1f5" data-eye="#080d18"></div><span class="mono">48</span></div>
+      <div><div class="stage" style="width:96px" data-color="#e8f1f5" data-eye="#080d18"></div><span class="mono">96</span></div>
+      <div><div class="stage" style="width:160px" data-color="#b5f45b" data-eye="#080d18"></div><span class="mono">160</span></div>
+    </div>
+  </div>
+</main>
+<script type="module">
+  import { mountAvatar } from 'https://cdn.jsdelivr.net/npm/open-bot-avatar@0.2.1/dist/dom/index.js';
+  const definition = await fetch(new URLSearchParams(location.search).get('def') || 'fantasminha.json').then((r) => r.json());
+  const avatars = [...document.querySelectorAll('.stage')].map((el) =>
+    mountAvatar(el, { definition, color: el.dataset.color, eyeColor: el.dataset.eye, followPointer: true, label: 'Fantasminha da Vision' }));
+  document.querySelectorAll('[data-mood]').forEach((btn) => btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-mood]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    avatars.forEach((a) => a.update({ mood: btn.dataset.mood }));
+  }));
+  const follow = document.querySelector('[data-follow]');
+  follow.addEventListener('click', () => {
+    const on = follow.getAttribute('aria-pressed') !== 'true';
+    follow.setAttribute('aria-pressed', String(on));
+    avatars.forEach((a) => a.update({ followPointer: on }));
+  });
+  window.avatars = avatars;
+</script>
+</body>
+</html>

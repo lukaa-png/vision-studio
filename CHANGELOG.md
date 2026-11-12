@@ -2,6 +2,12 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Fantasminha 2D no briefing
+
+- Versão 2D viva do mascote, feita com o motor Open Bot Avatar (MIT). Definição, prévia e SVGs em `design/mascot/avatar-2d/`.
+- O fantasminha acompanha o briefing: olha para o ponteiro, pensa enquanto a pessoa digita e fica feliz quando a mensagem para o WhatsApp está pronta. Muda de cor com o tema e para quando o movimento é pausado ou reduzido.
+- Motor hospedado no próprio site (`mascot-engine.js`), sem depender de CDN. `mascot.js` e `mascot-engine.js` entram no pacote de deploy.
+
 ## 10/11/2026 — Comercial V5 e mascote oficial
 
 - Comercial de 24 segundos com Allyah Braids, Solução Protect e Ateliê 27. A versão leve e a composição visual estão em `design/motion/v5/`.

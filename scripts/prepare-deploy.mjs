@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, 'dist');
-const publicFiles = ['index.html', 'styles.css', 'project-covers.css', 'script.js', 'trailer.css', 'trailer.js'];
+const publicFiles = ['index.html', 'styles.css', 'project-covers.css', 'script.js', 'trailer.css', 'trailer.js', 'mascot.js', 'mascot-engine.js'];
 const extensions = new Set(['.png', '.jpg', '.jpeg', '.svg', '.webp', '.gif', '.mp4', '.vtt']);
 const checkedFiles = [];
 
