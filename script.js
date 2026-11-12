@@ -181,6 +181,72 @@
 
   if ('IntersectionObserver' in window && !reduceMotion.matches) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('reveal-enter'); observer.unobserve(entry.target); } }), { threshold: .12 });
-    $$('.section-heading, .service-row, .studio-grid, .process-grid').forEach(element => observer.observe(element));
+    $$('.section-heading, .service-row, .studio-grid, .process-grid, .faq').forEach(element => observer.observe(element));
   }
+
+  // ── Rolagem: celular da Allyah e linha do processo ──────────────────
+  // Padrões do Ruixen UI (MIT): phone-scroll-hero e milestone-stepper, reescritos sem React.
+  // A rolagem vira um número de 0 a 1 (progresso); o CSS usa esse número nas variáveis --p e --s.
+  const stage = $('[data-phone-stage]');
+  const phone = $('[data-phone]');
+  const phonePage = $('[data-phone-page]');
+  const processGrid = $('.process-grid');
+  const steps = processGrid ? [...processGrid.querySelectorAll('article')] : [];
+  if (processGrid) {
+    const track = document.createElement('div');
+    track.className = 'process-track';
+    track.setAttribute('aria-hidden', 'true');
+    track.innerHTML = '<span></span>';
+    processGrid.prepend(track);
+  }
+  // FAQ: cada pergunta entra um pouco depois da anterior (--i = posição na lista)
+  $$('.faq details').forEach((item, index) => item.style.setProperty('--i', index));
+
+  const clamp01 = (value) => Math.min(1, Math.max(0, value));
+  const motionOff = () => reduceMotion.matches || root.dataset.motion === 'paused';
+  let frame = 0;
+
+  function updateScroll() {
+    frame = 0;
+    const viewport = window.innerHeight;
+    if (stage && phone && phonePage) {
+      const rect = stage.getBoundingClientRect();
+      // 0 quando o topo da seção encosta no topo da tela; 1 quando o fim da seção encosta no fim da tela
+      const progress = clamp01(-rect.top / Math.max(1, rect.height - viewport));
+      phone.style.setProperty('--p', clamp01(progress / 0.35).toFixed(4)); // endireita no primeiro terço
+      phone.style.setProperty('--s', clamp01((progress - 0.15) / 0.85).toFixed(4)); // a página rola dentro da tela
+      phone.style.setProperty('--travel', `${Math.max(0, phonePage.offsetHeight - phonePage.parentElement.clientHeight)}px`);
+    }
+    if (processGrid) {
+      const rect = processGrid.getBoundingClientRect();
+      // a linha enche enquanto o processo sobe da parte de baixo da tela até perto do meio
+      const progress = clamp01((viewport * 0.85 - rect.top) / (rect.height + viewport * 0.35));
+      processGrid.style.setProperty('--p', progress.toFixed(4));
+      steps.forEach((step, index) => step.classList.toggle('is-active', progress === 1 || progress >= index / steps.length + 0.02));
+    }
+  }
+  const onScroll = () => { if (!frame) frame = requestAnimationFrame(updateScroll); };
+
+  function setScrollEffects() {
+    const off = motionOff();
+    root.classList.toggle('phone-static', off);
+    processGrid?.classList.toggle('is-tracking', !off);
+    window.removeEventListener('scroll', onScroll);
+    window.removeEventListener('resize', onScroll);
+    if (off) {
+      // sem animação: celular reto, tela rolável com o dedo e todas as etapas acesas
+      phone?.style.setProperty('--p', 1);
+      phone?.style.setProperty('--s', 0);
+      processGrid?.style.setProperty('--p', 1);
+      steps.forEach((step) => step.classList.add('is-active'));
+      return;
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    updateScroll();
+  }
+  setScrollEffects();
+  phonePage?.addEventListener('load', onScroll);
+  reduceMotion.addEventListener('change', setScrollEffects);
+  new MutationObserver(setScrollEffects).observe(root, { attributes: true, attributeFilter: ['data-motion'] });
 })();

@@ -54,6 +54,8 @@ Tema claro/escuro, menu móvel, filtros, galeria com teclado, FAQ e briefing que
 
 O fantasminha da Vision acompanha o briefing em 2D: olha para o ponteiro, pensa enquanto a pessoa digita e fica feliz quando a mensagem está pronta. Ele usa o motor [Open Bot Avatar](https://github.com/DominikScholz/open-bot-avatar), de Dominik Scholz, sob licença MIT, hospedado no próprio site e sem coleta de dados. Detalhes em [design/mascot/avatar-2d](design/mascot/avatar-2d/README.md).
 
+A seção "Onde seu cliente decide" (celular que se endireita com a rolagem), a linha de etapas do processo e a entrada em sequência do FAQ adaptam padrões do [Ruixen UI](https://github.com/ruixenui/ruixen.com) (MIT): phone-scroll-hero, milestone-stepper e staggered-faq-section. Foram reescritos em CSS e JavaScript puros, sem React nem dependências.
+
 A seção “A Vision em movimento” apresenta o V2 de 30 segundos antes do contato. O vídeo leve (~1,68 MB) só recebe sua fonte no clique; não toca sozinho. Inclui controles, reprodução inline no celular, legendas opcionais em português e transcrição. As legendas requerem servir a pasta por HTTP, não abrir o HTML por `file://`.
 
 O movimento decorativo pode ser pausado e considera `prefers-reduced-motion`. Isso não equivale a uma certificação completa de acessibilidade.

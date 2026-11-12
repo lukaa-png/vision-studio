@@ -2,6 +2,14 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Melhorias de interface
+
+- Hero com a oferta clara: landing pages para negócios do bairro, R$ 500, pronta em 10 dias úteis.
+- Nova seção "Onde seu cliente decide": um celular que se endireita com a rolagem e mostra a página da Allyah Braids rolando na tela.
+- Processo com linha de etapas que se preenche com a rolagem; FAQ com entrada em sequência.
+- Rótulos de 8 a 10 px passaram para 11 e 12 px, para leitura no celular.
+- Padrões adaptados do Ruixen UI (MIT) e reescritos em CSS e JS puros, sem dependências. Tudo para quando o movimento é pausado ou reduzido.
+
 ## 12/11/2026 — Fantasminha 2D no briefing
 
 - Versão 2D viva do mascote, feita com o motor Open Bot Avatar (MIT). Definição, prévia e SVGs em `design/mascot/avatar-2d/`.
