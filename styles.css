@@ -131,3 +131,11 @@ html[data-theme=light] .phone{background:#1d2633}
 .landing-complete{position:relative;box-shadow:inset 3px 0 0 #080d18;padding-left:24px}
 .price-tag{display:inline-block;margin-left:10px;padding:3px 8px;background:#080d18;color:#b5f45b!important;font-size:11px;letter-spacing:.08em;vertical-align:middle}
 @media(max-width:600px){.landing-complete{padding-left:16px}.price-tag{margin:8px 0 0;display:table}}
+
+/* Contato: Fantasminha Social leva aos bastidores no Instagram */
+.contact-social{text-decoration:none;color:inherit}
+.contact-social-stage{width:84px;aspect-ratio:1;flex:none;display:block}
+.contact-social span.mono{transition:color .2s}
+.contact-social:hover span.mono,.contact-social:focus-visible span.mono{color:var(--pulse)}
+.contact-mark.contact-social{display:flex}
+@media(max-width:600px){.contact-mark.contact-social{margin-top:28px}.contact-social-stage{width:72px}}

@@ -2,6 +2,11 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Fantasminha Social no contato
+
+- O Fantasminha Social (o fantasminha com celular, avatar do Instagram da Vision) aparece animado no contato e leva aos bastidores da temporada no @vslvision. Também aparece no celular.
+- `mascot.js` aceita `data-mascot="social"` para usar o Social em qualquer seção.
+
 ## 12/11/2026 — Ajustes de design
 
 - Faixa "Já passaram por aqui" logo depois do hero, com Allyah Braids, Sára Zara, Solução Protect e Lan House do Black (só negócios reais; o Ateliê 27, conceitual, fica de fora).

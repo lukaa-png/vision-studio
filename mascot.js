@@ -66,12 +66,30 @@ if (host && form && result && whatsapp) {
     .observe(root, { attributes: true, attributeFilter: ['data-theme', 'data-motion'] });
 }
 
-// Outros lugares com o fantasminha (ex.: seção Estúdio), marcados com data-mascot:
+// Fantasminha Social: o fantasminha com celular, avatar do agente do Instagram.
+// Fonte e poses: pasta de conteúdo (marca/agente-social.json), validado com --strict.
+const socialDefinition = {
+  version: 1,
+  id: 'vision-social',
+  name: 'Fantasminha Social',
+  body: { path: 'M18 50C18 30 29.5 17 45 17C60.5 17 72 30 72 50C72.5 60 73.5 68 73 75C72.5 81 69 84.5 64 84.5C60 84.5 57.5 82.5 55.5 80.5C53 83.5 49.5 85.5 45 85.5C40.5 85.5 37 83.5 34.5 80.5C32.5 82.5 30 84.5 26 84.5C21 84.5 17.5 81 17 75C16.5 68 17.5 60 18 50ZM9.5 61C9 56.5 13.5 54 21 55L22.5 66C15.5 68 10 66 9.5 61ZM67 53C70 48 73 42 76.5 37.8L80 39.6C77.5 46 74 54 70.5 59ZM81.21 19.44L87.98 21.24Q90.39 21.89 89.74 24.31L85.86 38.8Q85.21 41.21 82.8 40.56L76.03 38.76Q73.61 38.11 74.26 35.7L78.14 21.2Q78.79 18.79 81.21 19.44ZM80.08 21.72L76.2 36.2L83.92 38.28L87.8 23.8Z' },
+  eyes: { x: 45, y: 44, spacing: 17, scale: 1.2 },
+};
+// Ele é sempre verde, para diferenciar do fantasminha pérola do site.
+const socialPalette = {
+  dark: { color: '#b5f45b', eyeColor: '#080d18' },
+  light: { color: '#395d15', eyeColor: '#e8f1f5' },
+};
+const socialColors = () => socialPalette[root.dataset.theme === 'light' ? 'light' : 'dark'];
+
+// Outros lugares com fantasminha, marcados com data-mascot (data-mascot="social" usa o Social):
 // ele olha para o ponteiro e fica feliz enquanto o ponteiro está na seção.
 document.querySelectorAll('[data-mascot]').forEach((stage) => {
+  const isSocial = stage.dataset.mascot === 'social';
+  const colors = isSocial ? socialColors : currentColors;
   const extra = mountAvatar(stage, {
-    definition,
-    ...currentColors(),
+    definition: isSocial ? socialDefinition : definition,
+    ...colors(),
     followPointer: true,
     reducedMotion: motionSetting(),
     label: '',
@@ -79,6 +97,6 @@ document.querySelectorAll('[data-mascot]').forEach((stage) => {
   const section = stage.closest('section');
   section?.addEventListener('pointerenter', () => extra.update({ mood: 'happy' }));
   section?.addEventListener('pointerleave', () => extra.update({ mood: 'idle' }));
-  new MutationObserver(() => extra.update({ ...currentColors(), reducedMotion: motionSetting() }))
+  new MutationObserver(() => extra.update({ ...colors(), reducedMotion: motionSetting() }))
     .observe(root, { attributes: true, attributeFilter: ['data-theme', 'data-motion'] });
 });
