@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Vision · logo animado</title>
+<style>
+*{margin:0}html,body{width:1080px;height:1080px;overflow:hidden;background:#080d18}
+#grade{position:absolute;inset:0;background-image:linear-gradient(rgba(41,53,67,.45) 1px,transparent 1px),linear-gradient(90deg,rgba(41,53,67,.45) 1px,transparent 1px);background-size:90px 90px}
+#brilho{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(181,244,91,.16),transparent 45%)}
+svg{position:absolute;left:90px;top:96px;width:900px;height:840px}
+</style></head><body>
+<div id="grade"></div><div id="brilho"></div>
+<!-- mesma geometria da versão empilhada (viewBox 600 x 560) -->
+<svg viewBox="0 0 600 560">
+  <defs>
+    <clipPath id="vClip"><rect id="vRect" x="0" y="0" width="96" height="0"/></clipPath>
+    <clipPath id="wClip"><rect id="wRect" x="0" y="0" width="0" height="560"/></clipPath>
+  </defs>
+  <g transform="translate(190 70) scale(2.2917)">
+    <path id="c1" d="M8 29V8h21" fill="none" stroke="#b5f45b" stroke-width="6"/>
+    <path id="c2" d="M67 8h21v21" fill="none" stroke="#b5f45b" stroke-width="6"/>
+    <path id="c3" d="M88 67v21H67" fill="none" stroke="#b5f45b" stroke-width="6"/>
+    <path id="c4" d="M29 88H8V67" fill="none" stroke="#b5f45b" stroke-width="6"/>
+    <path d="M25 31h10l13 27 13-27h10L48 76z" fill="#b5f45b" clip-path="url(#vClip)"/>
+  </g>
+  <path id="palavra" d="__WORD__" fill="#e8f1f5" clip-path="url(#wClip)"/>
+  <rect id="cursor" x="0" y="359" width="14" height="111" fill="#b5f45b"/>
+</svg>
+<script>
+// Logo animado: render(t) desenha o instante t (segundos), para o render.mjs gerar o vídeo.
+const clamp = (v) => Math.min(1, Math.max(0, v));
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const ease = (x) => 1 - Math.pow(1 - x, 3);
+const caixa = document.getElementById('palavra').getBBox();
+window.ready = Promise.resolve();
+window.render = (t) => {
+  // 1. os quatro cantos chegam de fora para o enquadramento
+  const d = 40 * (1 - ease(prog(t, 0.1, 0.8)));
+  [['c1', -d, -d], ['c2', d, -d], ['c3', d, d], ['c4', -d, d]].forEach(([id, x, y]) => {
+    const el = document.getElementById(id);
+    el.setAttribute('transform', `translate(${x} ${y})`);
+    el.style.opacity = ease(prog(t, 0.1, 0.45));
+  });
+  // 2. o V aparece de cima para baixo
+  document.getElementById('vRect').setAttribute('height', 96 * ease(prog(t, 0.7, 1.25)));
+  // 3. o nome é "digitado" da esquerda para a direita, com o cursor na frente
+  const p = ease(prog(t, 1.35, 2.25));
+  const borda = caixa.x + caixa.width * p;
+  document.getElementById('wRect').setAttribute('width', borda);
+  const cursor = document.getElementById('cursor');
+  cursor.setAttribute('x', borda + 10);
+  // 4. o cursor pisca no fim, como num terminal
+  cursor.style.opacity = t < 1.35 ? 0 : t < 2.4 ? 1 : (Math.floor((t - 2.4) * 2.5) % 2 ? 0 : 1);
+};
+window.render(0);
+if (new URLSearchParams(location.search).has('play')) {
+  const t0 = performance.now();
+  const loop = () => { window.render(((performance.now() - t0) / 1000) % 4); requestAnimationFrame(loop); };
+  loop();
+}
+</script>
+</body></html>
