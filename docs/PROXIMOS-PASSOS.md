@@ -19,11 +19,10 @@ Commits: `c8c4d2c` (mascote) e `28a6e59` (interface).
 
 ## Ordem dos próximos passos
 
-1. **Oferta e produtos.** Definir pacotes, o que está incluso e como funcionam domínio,
-   hospedagem e manutenção. Todo o resto depende disso.
-2. **Contrato e termos para clientes.** Contrato simples de prestação de serviço, com escopo,
-   prazo, pagamento, rodadas, propriedade do site e do domínio. Revisar com um advogado antes
-   do primeiro uso.
+1. **Oferta e produtos.** Feito em 12/11: Essencial (R$ 500) e Completo (R$ 990), pagamento
+   50% + 50%, domínio no nome do cliente e FAQ sobre hospedagem e manutenção.
+2. **Contrato e termos para clientes.** Modelo escrito em 12/11 (fora deste repositório público).
+   Falta: revisão por um advogado antes do primeiro uso.
 3. **Textos (copy).** Reescrever o site em volta da oferta definida: falar com o dono do
    negócio, responder dúvidas de domínio e manutenção no FAQ.
 4. **Design.** Logos dos cases, blocos, simetria e alinhamento entre seções.

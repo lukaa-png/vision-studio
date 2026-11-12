@@ -2,6 +2,12 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Pacotes Essencial e Completo
+
+- Landing page em dois pacotes: Essencial (R$ 500, endereço gratuito, 10 dias úteis) e Completo (R$ 990, domínio próprio, textos da Vision, perfil no Google e fotos tratadas, 15 dias úteis).
+- Pagamento em duas partes: 50% para começar e 50% na entrega, com contrato.
+- FAQ explica hospedagem, domínio no nome do cliente (cerca de R$ 40 por ano no Registro.br), pagamento e o que acontece ao cancelar a manutenção.
+
 ## 12/11/2026 — Melhorias de interface
 
 - Hero com a oferta clara: landing pages para negócios do bairro, R$ 500, pronta em 10 dias úteis.
