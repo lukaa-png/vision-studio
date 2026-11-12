@@ -75,6 +75,7 @@ O segundo comando confere arquivos locais referenciados, âncoras, IDs duplicado
 ## Processo e estudo
 
 - [Decisões de design e implementação](docs/PROCESSO.md)
+- [Próximos passos: oferta, contrato, textos e design](docs/PROXIMOS-PASSOS.md)
 - [Roteiro para estudar o código](docs/ESTUDAR-O-CODIGO.md)
 - [Motion, voz e som](docs/VIDEO-E-SOM.md)
 - [Comercial V5](design/motion/v5/README.md)
