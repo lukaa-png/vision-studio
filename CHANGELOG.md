@@ -2,6 +2,13 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Sistema de marca V2
+
+- A assinatura principal não muda. O sistema ganha versões para cada uso: empilhada, ícone de perfil, selo, blueprint, pixel, com o fantasminha e a moldura dinâmica (os cantos do [V] enquadram outros sinais).
+- Seis ícones da moldura (marca, oferta, processo, social, serviço, ideia), um por arquivo, para as capas dos destaques do Instagram.
+- Logo animado de 4 s em MP4 e GIF para abrir e fechar Reels.
+- SVGs com texto em contorno e prancha de apresentação em `design/logo/variacoes/`.
+
 ## 12/11/2026 — Fantasminha Social no contato
 
 - O Fantasminha Social (o fantasminha com celular, avatar do Instagram da Vision) aparece animado no contato e leva aos bastidores da temporada no @vslvision. Também aparece no celular.

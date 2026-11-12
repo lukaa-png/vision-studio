@@ -80,6 +80,8 @@ O segundo comando confere arquivos locais referenciados, âncoras, IDs duplicado
 - [Motion, voz e som](docs/VIDEO-E-SOM.md)
 - [Comercial V5](design/motion/v5/README.md)
 - [Mascote oficial e animações 3D](design/mascot/official/README.md)
+- [Fantasminha 2D vivo (Open Bot Avatar)](design/mascot/avatar-2d/README.md)
+- [Sistema de marca V2: variações do logo, ícones e logo animado](design/logo/variacoes/README.md)
 - [Histórico de design e movimento](design/README.md)
 - [Registro de evolução](CHANGELOG.md)
 - [Autoria e materiais](docs/AUTORIA-E-MATERIAIS.md)

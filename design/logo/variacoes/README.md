@@ -17,6 +17,7 @@ precisar das fontes. A prancha está em `prancha-sistema-v2.png`.
 | `05-blueprint.svg` | Construção do sinal | Apresentação, processo |
 | `06-moldura-sistema.svg` | Moldura dinâmica: os cantos enquadram outros sinais | Ícones de seção, destaques, stories |
 | `07-fantasminha-assinatura.svg` | Com o fantasminha | Conteúdo, bastidores |
+| `08-icone-marca/oferta/processo/social/servico/ideia.svg` | Ícones da moldura, um por arquivo (1080 × 1080), sinal centralizado pela caixa do desenho | Capas dos destaques do Instagram |
 | `../animacao/vision-logo-animado.mp4` e `.gif` | Animado, 4 s | Abertura e fechamento de Reels |
 
 ## Regras que continuam valendo
