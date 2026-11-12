@@ -2,6 +2,13 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Ajustes de design
+
+- Faixa "Já passaram por aqui" logo depois do hero, com Allyah Braids, Sára Zara, Solução Protect e Lan House do Black (só negócios reais; o Ateliê 27, conceitual, fica de fora).
+- Valores: o pacote Completo ganha destaque e o selo "Recomendado"; a coluna da esquerda lista o que vem em todos os pacotes e acompanha a rolagem no desktop.
+- Estúdio: o fantasminha 2D ocupa o espaço livre ao lado da assinatura e fica feliz quando o ponteiro passa pela seção.
+- Numeração do menu igual à das seções; rótulo do processo alinhado às etapas novas.
+
 ## 12/11/2026 — Textos reescritos para o dono do negócio
 
 - Títulos e botões trocam frases de estúdio ("Abrir possibilidades", "Construir com intenção") por frases concretas: "Quero meu site", "Do primeiro oi ao site no ar", "Preço fechado. Sem surpresa.", "Bora começar.".

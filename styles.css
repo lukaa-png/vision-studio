@@ -93,3 +93,41 @@ html[data-theme=light] .phone{background:#1d2633}
   .js-ready .main-nav.is-open{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;justify-items:start}
   .main-nav a{padding:12px 0}
 }
+
+/* ============================================================
+   Ajustes de design · 12/11/2026
+   ============================================================ */
+
+/* Faixa de clientes depois do hero */
+.client-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.client-strip-inner{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:clamp(24px,4vw,64px);padding-block:26px}
+.client-strip-label{color:var(--info);font-size:11px;letter-spacing:.08em;line-height:1.6}
+.client-list{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 32px;margin:0;padding:0;list-style:none;color:var(--muted)}
+.client-list li{font-size:clamp(17px,1.6vw,22px);line-height:1.1;white-space:nowrap;transition:color .2s}
+.client-list li:hover{color:var(--text)}
+.client-allyah{font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:clamp(14px,1.25vw,18px)!important}
+.client-sara{font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.client-protect{font-weight:600;letter-spacing:-.02em}
+.client-black{font-family:var(--pixel);font-weight:600}
+@media(max-width:850px){
+  .client-strip-inner{grid-template-columns:1fr;gap:16px}
+  .client-strip-label br{display:none}
+  .client-list{justify-content:flex-start;gap:12px 28px}
+}
+
+/* Estúdio: fantasminha na coluna da esquerda */
+.studio-mascot{display:flex;align-items:center;gap:20px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line);max-width:380px}
+.studio-mascot-stage{width:120px;aspect-ratio:1;flex:none}
+.studio-mascot p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}
+@media(max-width:600px){.studio-mascot-stage{width:96px}}
+
+/* Valores: lista do que vem em todos os pacotes e coluna fixa no desktop */
+.included-list{list-style:none;margin:28px 0;padding:0;border-top:1px solid #c6d0c5}
+.included-list li{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid #c6d0c5;font-size:12px;letter-spacing:.03em;color:#284157}
+.included-list li::before{content:'+';color:#395d15;font-weight:600}
+@media(min-width:851px){.investment-grid>div:first-child{position:sticky;top:120px;align-self:start}}
+
+/* Valores: destaque do pacote Completo */
+.landing-complete{position:relative;box-shadow:inset 3px 0 0 #080d18;padding-left:24px}
+.price-tag{display:inline-block;margin-left:10px;padding:3px 8px;background:#080d18;color:#b5f45b!important;font-size:11px;letter-spacing:.08em;vertical-align:middle}
+@media(max-width:600px){.landing-complete{padding-left:16px}.price-tag{margin:8px 0 0;display:table}}

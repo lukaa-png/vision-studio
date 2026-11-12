@@ -25,7 +25,10 @@ Commits: `c8c4d2c` (mascote) e `28a6e59` (interface).
    Falta: revisão por um advogado antes do primeiro uso.
 3. **Textos (copy).** Feito em 12/11: títulos, botões, processo, valores, contato, título e
    descrição para busca. Fica para depois: textos dos cards de projeto e da seção Estúdio.
-4. **Design.** Logos dos cases, blocos, simetria e alinhamento entre seções.
+4. **Design.** Primeira rodada feita em 12/11: faixa de clientes, destaque do Completo,
+   coluna de valores, mascote no Estúdio, numeração consistente. Fica para depois: logos
+   reais dos clientes (precisa dos arquivos e da autorização de cada um) e foto do Luiz no
+   lugar da sigla "LA".
 5. **Mascote e conteúdo.** Levar o fantasminha para o Instagram e para os vídeos curtos, com
    bastidores do processo (construção em público).
 

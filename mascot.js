@@ -65,3 +65,20 @@ if (host && form && result && whatsapp) {
   new MutationObserver(() => bot.update({ ...currentColors(), reducedMotion: motionSetting() }))
     .observe(root, { attributes: true, attributeFilter: ['data-theme', 'data-motion'] });
 }
+
+// Outros lugares com o fantasminha (ex.: seção Estúdio), marcados com data-mascot:
+// ele olha para o ponteiro e fica feliz enquanto o ponteiro está na seção.
+document.querySelectorAll('[data-mascot]').forEach((stage) => {
+  const extra = mountAvatar(stage, {
+    definition,
+    ...currentColors(),
+    followPointer: true,
+    reducedMotion: motionSetting(),
+    label: '',
+  });
+  const section = stage.closest('section');
+  section?.addEventListener('pointerenter', () => extra.update({ mood: 'happy' }));
+  section?.addEventListener('pointerleave', () => extra.update({ mood: 'idle' }));
+  new MutationObserver(() => extra.update({ ...currentColors(), reducedMotion: motionSetting() }))
+    .observe(root, { attributes: true, attributeFilter: ['data-theme', 'data-motion'] });
+});
