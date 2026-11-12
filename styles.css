@@ -87,3 +87,9 @@ html[data-theme=light] .phone{background:#1d2633}
 .faq.reveal-enter details{animation:faq-in .5s ease-out both;animation-delay:calc(var(--i,0) * 80ms)}
 @keyframes faq-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.faq.reveal-enter details{animation:none}}
+
+/* Menu no celular: 4 itens em grade 2 × 2 (em linha não cabem em 375px) */
+@media(max-width:600px){
+  .js-ready .main-nav.is-open{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;justify-items:start}
+  .main-nav a{padding:12px 0}
+}

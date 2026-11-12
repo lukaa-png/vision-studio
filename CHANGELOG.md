@@ -2,6 +2,14 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Textos reescritos para o dono do negócio
+
+- Títulos e botões trocam frases de estúdio ("Abrir possibilidades", "Construir com intenção") por frases concretas: "Quero meu site", "Do primeiro oi ao site no ar", "Preço fechado. Sem surpresa.", "Bora começar.".
+- Processo descreve o que acontece em cada etapa (briefing e contrato, prévia para aprovar, no ar em 10 a 15 dias úteis).
+- Título e descrição da página para busca e compartilhamento falam de sites para negócios do bairro e do preço.
+- Menu ganha "Valores"; no celular, o menu aberto vira grade 2 × 2.
+- A identidade (título pixelado, rótulos FIG. e mono) foi mantida.
+
 ## 12/11/2026 — Pacotes Essencial e Completo
 
 - Landing page em dois pacotes: Essencial (R$ 500, endereço gratuito, 10 dias úteis) e Completo (R$ 990, domínio próprio, textos da Vision, perfil no Google e fotos tratadas, 15 dias úteis).
