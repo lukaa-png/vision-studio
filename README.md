@@ -8,7 +8,7 @@ Projeto autoral de **Luiz Albuquerque**: identidade visual, landing page e docum
 
 ## Sobre o projeto
 
-A Vision nasce da intenção de aproximar negócios do meu bairro do digital. Este repositório registra a implementação do site e as decisões que conectam marca, interface e movimento. Não apresenta resultados comerciais não medidos.
+A Vision nasce da intenção de aproximar pequenos negócios do digital. Este repositório registra a implementação do site e as decisões que conectam marca, interface e movimento. Não apresenta resultados comerciais não medidos.
 
 O código foi desenvolvido com apoio de IA. Direção, escolha de referências, seleção de materiais e revisão foram conduzidas por Luiz. A documentação distingue entregas verificadas de intenções futuras.
 

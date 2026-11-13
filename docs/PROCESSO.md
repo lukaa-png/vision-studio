@@ -2,7 +2,7 @@
 
 ## Intenção
 
-A Vision é um projeto autoral de Luiz Albuquerque, unindo design e código. Aproximar negócios do bairro do digital é a direção desejada, não um resultado comercial já demonstrado.
+A Vision é um projeto autoral de Luiz Albuquerque, unindo design e código. Aproximar pequenos negócios do digital é a direção desejada, não um resultado comercial já demonstrado.
 
 ## Direção visual
 

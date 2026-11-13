@@ -2,6 +2,12 @@
 
 Este registro documenta etapas anteriores de forma retrospectiva. O histórico Git começa com a organização do projeto no GitHub, sem commits retroativos.
 
+## 12/11/2026 — Sai o "bairro" dos textos
+
+- "Negócios do bairro" vira "pequenos negócios" no título, na descrição, no hero, no portfólio e no Estúdio. O termo prendia a Vision a um lugar e afastava clientes de fora da região.
+- Capa da Lan House: "Do balcão para a web."; fecho do Estúdio: "De São Paulo para novas possibilidades".
+- O registro histórico (entradas anteriores e `docs/PROXIMOS-PASSOS.md`) fica como estava.
+
 ## 12/11/2026 — Sistema de marca V2
 
 - A assinatura principal não muda. O sistema ganha versões para cada uso: empilhada, ícone de perfil, selo, blueprint, pixel, com o fantasminha e a moldura dinâmica (os cantos do [V] enquadram outros sinais).
